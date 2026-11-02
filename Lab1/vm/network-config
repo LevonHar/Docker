@@ -1,0 +1,7 @@
+version: 2
+ethernets:
+  nic0:
+    match:
+      driver: virtio*
+    dhcp4: true
+    dhcp6: false

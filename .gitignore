@@ -1,0 +1,15 @@
+# Private SSH key
+Lab1/keys/lab_ed25519
+
+# QEMU runtime and installer (binaries; several files exceed GitHub's 100 MB limit)
+Lab1/qemu/
+Lab1/tools/*.exe
+
+# VM disks, cloud images, and logs
+Lab1/vm/*.img
+Lab1/vm/*.qcow2
+Lab1/vm/*.iso
+Lab1/vm/*.log
+
+# Downloaded installers
+Lab2/installer/*.exe

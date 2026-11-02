@@ -1,0 +1,17 @@
+#cloud-config
+hostname: ubuntu-server
+fqdn: ubuntu-server.lab
+manage_etc_hosts: true
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKoMQ91tgN6nkOSXU4NMptZ7sYCGAeeeDRISqxZ6WlKf lab1-ubuntu-server
+disable_root: true
+ssh_pwauth: false
+package_update: false
+package_upgrade: false
+growpart:
+  mode: auto
+  devices: ['/']
+  ignore_growroot_disabled: false
+resize_rootfs: true
+runcmd:
+  - [ sh, -c, "echo cloud-init-done > /var/tmp/cloud-init-done" ]
