@@ -1,5 +1,11 @@
-# Private SSH key
-Lab1/keys/lab_ed25519
+# SSH keys. The private key must never be published.
+# The public key is also written into Lab1/vm/user-data by make_seed.py.
+Lab1/keys/
+Lab1/vm/user-data
+
+# Logs can capture the Windows username
+*.log
+Lab2/run-result.txt
 
 # QEMU runtime and installer (binaries; several files exceed GitHub's 100 MB limit)
 Lab1/qemu/
